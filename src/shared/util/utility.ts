@@ -44,3 +44,9 @@ export const debounce = (func: any, wait = 500) => {
 		h = setTimeout(() => func(...args), wait);
 	};
 };
+
+export const formatOpeningHours = (text: string) => {
+	if (!text) return '-';
+	const multipleValues = text.split(',');
+	return `${multipleValues[0]},<br />${multipleValues[1] || ''}`;
+};

@@ -6,4 +6,5 @@ export interface IRestaurant {
 	restaurantDescription: string;
 	restaurantImage: string;
 	restaurantName: string;
+	openingHours: string;
 }

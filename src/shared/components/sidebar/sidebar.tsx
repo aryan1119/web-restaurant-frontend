@@ -10,7 +10,7 @@ interface ILinksArray {
 const Links: ILinksArray[] = [
 	{
 		title: 'Home',
-		path: '/home',
+		path: '/restaurants',
 		icon: <HomeIcon className='width--24px icon height--24px fill--grey-100' />
 	},
 	{
@@ -51,7 +51,7 @@ const Sidebar: React.FC = () => {
 							<li
 								key={link.title}
 								className={`mt--32 cursor--pointer transition link flex align-items--center text--grey-400 ${
-									pathname === link.path ? 'active' : ''
+									pathname.includes(link.path) ? 'active' : ''
 								}`}
 								onClick={() => navigate(link.path)}
 							>

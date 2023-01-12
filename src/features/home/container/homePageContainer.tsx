@@ -12,6 +12,7 @@ import { IRestaurant } from '../interface/interface';
 const HomePageContainer: React.FC = () => {
 	const [loading, setLoading] = useState(true);
 	const [restaurants, setRestaurnats] = useState<IRestaurant[]>([]);
+	const [selectedCategory, setSelectedCategory] = useState('');
 
 	const fetchRestaurants = useCallback(async () => {
 		try {
@@ -31,8 +32,8 @@ const HomePageContainer: React.FC = () => {
 	return (
 		<section className='home-page'>
 			<FilterSection />
-			<Categories />
-			<Restaurants loading={loading} restaurants={restaurants} />
+			<Categories handleSelectCategory={setSelectedCategory} selectedCategory={selectedCategory} />
+			<Restaurants loading={loading} restaurants={restaurants} selectedCategory={selectedCategory} />
 		</section>
 	);
 };

@@ -26,20 +26,41 @@ const categories = [
 		logo: MacdLogo
 	}
 ];
-
-const Categories: React.FC = () => {
+interface IProps {
+	handleSelectCategory: (category: string) => void;
+	selectedCategory: string;
+}
+const Categories: React.FC<IProps> = (props) => {
+	const { handleSelectCategory, selectedCategory } = props;
 	return (
-		<div className='category-wrapper'>
+		<div className='category-wrapper mt--50'>
 			<h4 className='small font--bold'>Category</h4>
-			<div className='categories flex'>
+			<div className='categories mt--30 flex flex--wrap'>
 				{categories.map((category) => (
-					<div key={category.title} className='flex align-items--center mr--40' title='Select category'>
-						<button className='btn  flex justify-content--center align-items--center action mr--15 bg--grey-300'>
+					<div
+						onClick={() => handleSelectCategory(category.title)}
+						key={category.title}
+						className='flex align-items--center mr--40 cursor--pointer mb--15'
+						title='Select category'
+					>
+						<button
+							className={`btn  flex justify-content--center mr--15 align-items--center action ${
+								selectedCategory === category.title ? 'bg--primary' : 'bg--grey-300'
+							}`}
+						>
 							<img className='image' src={category.logo} alt='' />
 						</button>
-						<p className='font--bold'>{category.title}</p>
+						<p className={`font--bold ${selectedCategory === category.title ? 'text--primary' : ''}`}>
+							{category.title}
+						</p>
 					</div>
 				))}
+				<button
+					className={`btn transition medium category font--medium font-size--sm mr--10 mb--20 bg--red-200 text--white border-radius--md`}
+					onClick={() => handleSelectCategory('')}
+				>
+					Clear category
+				</button>
 			</div>
 		</div>
 	);

@@ -5,7 +5,9 @@ import { API_BASE_URL } from './index';
 export const API_CONFIG = {
 	baseUrl: `${process.env.REACT_APP_BASE_URL}`,
 	path: {
-		allRestaurant: 'allRestaurants'
+		allRestaurant: 'allRestaurants',
+		restaurantDetails: 'restaurantDetails',
+		menu: 'menu'
 	}
 };
 

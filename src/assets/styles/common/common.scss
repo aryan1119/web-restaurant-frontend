@@ -931,6 +931,10 @@
 	line-height: 28px;
 }
 
+.line-height--40 {
+	line-height: 40px;
+}
+
 .font-family--rubik {
 	font-family: $font-rubik;
 }
@@ -1122,6 +1126,10 @@
 	border-radius: $border-radius-default;
 }
 
+.border-radius--md {
+	border-radius: $border-radius-md;
+}
+
 .border-radius--lg {
 	border-radius: $border-radius-lg;
 }
@@ -1165,6 +1173,10 @@
 	@include getShadesColorClasses($grey, 'background-color');
 }
 
+.bg--red {
+	@include getShadesColorClasses($red, 'background-color');
+}
+
 .bg--primary {
 	background-color: $primary;
 }
@@ -1191,4 +1203,12 @@
 
 .text--grey {
 	@include getShadesColorClasses($grey, 'color');
+}
+
+.text--white {
+	color: $white;
+}
+
+.text--primary {
+	color: $primary;
 }

@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router';
+
 import { IRestaurant } from 'features/home/interface/interface';
+import RestaurantPlaceholder from 'assets/images/restaurant-placeholder.jpeg';
 
 interface IProps {
 	item: IRestaurant;
@@ -6,11 +9,20 @@ interface IProps {
 
 const RestaurantCard: React.FC<IProps> = (props) => {
 	const { item } = props;
-	const { restaurantImage, isOpen, restaurantDescription, restaurantName } = item;
+	const { restaurantImage, isOpen, restaurantDescription, restaurantName, id } = item;
+	const navigate = useNavigate();
 
 	return (
-		<div className='card animated animate__fadeIn restaurant'>
-			<img className='image border-radius--xl width--full' src={restaurantImage} alt='Restaurant Image' />
+		<div
+			onClick={() => navigate(`/restaurants/${id}`)}
+			className='card cursor--pointer animated animate__fadeIn restaurant'
+			title='Show Restaurant'
+		>
+			<img
+				className='image border-radius--xl width--full object-fit--cover'
+				src={restaurantImage || RestaurantPlaceholder}
+				alt='Restaurant Image'
+			/>
 			<div className='flex justify-content--between info mt--16 mb--10'>
 				<p>{restaurantName}</p>
 				<div

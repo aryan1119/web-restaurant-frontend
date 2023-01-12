@@ -94,6 +94,15 @@ button {
 	}
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include margin(0);
+}
+
 h1 {
 	font-size: 3rem;
 
@@ -106,7 +115,7 @@ h2 {
 	font-size: 2.4375rem;
 
 	&.size--small {
-		font-size: 2.0625rem;
+		font-size: 2rem;
 	}
 }
 
