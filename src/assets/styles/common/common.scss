@@ -408,6 +408,10 @@
 	@include marginRight(15px);
 }
 
+.mr--16 {
+	@include marginRight(16px);
+}
+
 .mr--20 {
 	@include marginRight(20px);
 }
@@ -476,6 +480,10 @@
 	@include marginBottom(30px);
 }
 
+.mb--32 {
+	@include marginBottom(32px);
+}
+
 .mb--35 {
 	@include marginBottom(35px);
 }
@@ -486,6 +494,10 @@
 
 .mb--45 {
 	@include marginBottom(45px);
+}
+
+.mb--48 {
+	@include marginBottom(48px);
 }
 
 .mb--50 {
@@ -931,6 +943,10 @@
 	line-height: 28px;
 }
 
+.line-height--32 {
+	line-height: 32px;
+}
+
 .line-height--40 {
 	line-height: 40px;
 }
@@ -1169,6 +1185,10 @@
 	@include marginTop(10px);
 }
 
+.bg--white {
+	background-color: $white;
+}
+
 .bg--grey {
 	@include getShadesColorClasses($grey, 'background-color');
 }
@@ -1211,4 +1231,12 @@
 
 .text--primary {
 	color: $primary;
+}
+
+.text--black {
+	color: $black;
+}
+
+.text--orange {
+	color: $orange;
 }

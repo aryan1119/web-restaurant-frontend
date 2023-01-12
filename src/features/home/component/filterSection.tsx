@@ -10,10 +10,11 @@ import {
 
 interface IProps {
 	fromDetails?: boolean;
+	handleOpenFilter?: () => void;
 }
 
 const FilterSection: React.FC<IProps> = (props) => {
-	const { fromDetails = false } = props;
+	const { fromDetails = false, handleOpenFilter } = props;
 	const navigate = useNavigate();
 	return (
 		<div className={`flex justify-content--${fromDetails ? 'between' : 'end'}`}>
@@ -45,7 +46,11 @@ const FilterSection: React.FC<IProps> = (props) => {
 								className='searchbar-input width--full text--grey-400 font-size--sm bg--grey-300 border-radius--lg'
 							/>
 						</div>
-						<button className='btn action flex align-items--center ml--16 justify-content--center bg--primary'>
+						<button
+							onClick={handleOpenFilter}
+							className='btn action flex align-items--center ml--16 justify-content--center bg--primary'
+							title='Open Filter'
+						>
 							<FilterIcon className='width--16px fill--white' />
 						</button>
 					</>

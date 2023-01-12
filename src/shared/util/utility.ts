@@ -2,6 +2,7 @@ import { ThunkDispatch } from 'redux-thunk';
 import _ from 'lodash';
 
 import { IAction, IState } from 'shared/interface/state';
+import { IS_SAFARI } from 'shared/constants/constant';
 
 /**
  * create action creator
@@ -49,4 +50,49 @@ export const formatOpeningHours = (text: string) => {
 	if (!text) return '-';
 	const multipleValues = text.split(',');
 	return `${multipleValues[0]},<br />${multipleValues[1] || ''}`;
+};
+
+let scrollPosition = 0;
+
+const body = document.getElementsByTagName('body')[0];
+export const handleAddOverflow = (oldScrollValue = 0) => {
+	const webAppContentWrapper = document.getElementsByClassName('wrapper')[0] as HTMLDivElement;
+
+	if (body) {
+		if (IS_SAFARI) {
+			if (oldScrollValue) {
+				window.scrollTo({ top: oldScrollValue });
+			}
+			scrollPosition = window.pageYOffset;
+			document.body.style.top = `-${oldScrollValue || scrollPosition}px`;
+			body.classList.add('lock-position');
+			if (webAppContentWrapper) {
+				const topPosition = oldScrollValue || scrollPosition;
+				webAppContentWrapper.style.top = topPosition > 0 ? `-${topPosition - 88}px` : '88px';
+				webAppContentWrapper.classList.add('lock-position');
+			}
+		} else {
+			body.classList.add('overflow--hidden');
+			webAppContentWrapper && webAppContentWrapper.classList.add('overflow--hidden');
+		}
+	}
+};
+
+export const handleRemoveOverflow = () => {
+	const webAppContentWrapper = document.getElementsByClassName('wrapper')[0] as HTMLDivElement;
+	if (body) {
+		if (IS_SAFARI) {
+			body.classList.remove('lock-position');
+			document.body.style.removeProperty('top');
+			if (webAppContentWrapper) {
+				webAppContentWrapper.style.removeProperty('top');
+				webAppContentWrapper.classList.remove('lock-position');
+				webAppContentWrapper.scrollTo({ top: scrollPosition });
+			}
+			window.scrollTo({ top: scrollPosition });
+		} else {
+			body.classList.remove('overflow--hidden');
+			webAppContentWrapper && webAppContentWrapper.classList.remove('overflow--hidden');
+		}
+	}
 };
