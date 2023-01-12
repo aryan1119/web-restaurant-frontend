@@ -1,0 +1,1847 @@
+@media screen and (max-width: 1650px) {
+	.card {
+		.title {
+			.short-list--para {
+				width: 140px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1600px) {
+
+	// page-wrapper
+	.page-wrapper {
+		@include padding(25px 45px);
+		min-height: calc(100vh - 268px);
+	}
+
+	// Home-Screen
+	.landingpage-wrapper {
+		.text-wrapper {
+			.text-highlight {
+				.title {
+					font-size: 4.375rem;
+				}
+			}
+		}
+	}
+
+	//table
+	.table {
+		.table-head {
+			.table-row {
+				.table-cell__header {
+					.table-cell-info {
+						font-size: $font-size-sm;
+						line-height: 17px;
+					}
+				}
+			}
+		}
+
+		.table-body {
+			.table-row {
+				height: 100px;
+
+				.table-cell {
+					.table-cell-info {
+						font-size: $font-size-sm;
+						line-height: 17px;
+					}
+
+					.highlight-clip {
+						font-size: $font-size-xxl;
+					}
+
+					&.pinned {
+						.pinned-box {
+							height: 100px;
+
+							.pinned-box--text {
+								height: 100px;
+							}
+						}
+					}
+				}
+
+				.hr {
+					height: 60px;
+				}
+
+				.profile-actions,
+				.profile-collapse {
+					min-width: 38px;
+					width: 38px;
+					height: 38px;
+
+					.icon {
+						width: 13px;
+					}
+
+					.pin--icon {
+						width: 20px;
+					}
+
+					.menu--icon {
+						width: 5px;
+					}
+				}
+
+				.player-image {
+					width: 38px;
+					height: 38px;
+
+					&.big {
+						width: 52px;
+						height: 52px;
+					}
+				}
+
+				.rank-badge {
+					.icon {
+						width: 50px;
+					}
+				}
+			}
+
+			.player-expand__wrapper {
+				.player-expand {
+
+					.iga-score,
+					.prod-score {
+						@include padding(5px 20px 20px);
+
+						.progress-bar__wrapper {
+							@include marginTop(15px);
+						}
+
+						.score-title {
+							font-size: 1.375rem;
+							@include marginBottom(10px);
+						}
+
+						.hexagon-wrapper {
+							.icon {
+								width: 50px;
+								height: 50px;
+							}
+
+							.text {
+								font-size: 1.375rem;
+							}
+						}
+
+						.progress-bar__wrapper {
+							.progress-info {
+								.title {
+									font-size: $font-size-sm;
+								}
+
+								.score {
+									font-size: $font-size-browser-default;
+								}
+							}
+						}
+					}
+
+					.ra-score {
+						width: calc(20% - 30px);
+						@include margin(0 20px);
+						@include padding(10px 15px 20px);
+
+						.title {
+							font-size: $font-size-browser-default;
+						}
+
+						.score {
+							width: 38px;
+							height: 38px;
+						}
+
+						.frame {
+							.frame-item {
+								width: 70px;
+							}
+						}
+
+						.compare-title {
+							font-size: $font-size-browser-default;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.select-box {
+		margin-right: 30px;
+	}
+
+	.filter-wrapper {
+		padding: 25px;
+
+		.filter-items {
+			width: 280px;
+			margin-right: 30px;
+
+			.filter-input {
+				height: 50px;
+			}
+
+			.react-select-container {
+				height: 50px;
+			}
+
+			.filter-title {
+				font-size: 20px;
+			}
+		}
+
+		.filter-arrow {
+			height: 44px;
+			width: 44px;
+		}
+
+		.filter {
+			font-size: $font-size-sm;
+		}
+	}
+
+	// header-section
+	.header {
+		.tab-header {
+			.tab-btn--wrapper {
+				.tab-btn {
+					@include padding(0 15px);
+					font-size: $font-size-sm;
+				}
+			}
+		}
+	}
+
+	//Comparison modal
+	.modal {
+		&.player-compare {
+			.modal__body {
+				.player-info {
+					.score {
+						font-size: 2.1875rem;
+						line-height: 50px;
+					}
+
+					.igascore-title {
+						font-size: 1.375rem;
+					}
+
+					.player-name {
+						font-size: 1.8125;
+						padding: 0px;
+					}
+				}
+
+				.comparison-details {
+					.comparison-items {
+						.compare-number {
+							font-size: $font-size-xxl;
+						}
+
+						.player-title {
+							font-size: $font-size-xxl;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//Player-Profile
+	.player-profile__section {
+		.personal-section {
+			.info-wrapper {
+				@include marginBottom(45px);
+				.score,
+				.recruited,
+				.player-tag,
+				.team-grade,
+				.player-id {
+					&-title {
+						font-size: 1.375rem;
+					}
+				}
+
+				.player-avatar {
+					width: 250px;
+					height: 250px;
+				}
+
+				.player-name {
+					font-size: 2.5rem;
+				}
+
+				.bio {
+					.bio-field {
+						.bio-value {
+							font-size: 1.375rem;
+						}
+					}
+				}
+			}
+
+			.action-wrapper {
+				.select-field {
+					.react-select-container {
+						height: 45px;
+					}
+				}
+
+				.prospect-wrapper {
+					.btn-wrapper {
+						.btn {
+							width: 220px;
+							height: 45px;
+						}
+					}
+				}
+
+				.actions {
+					.action-item {
+						width: 44px;
+						height: 44px;
+					}
+				}
+			}
+		}
+
+		.left-section {
+			.ranking-section {
+				.rank-wrapper {
+					.rank-item {
+						.rank-badge {
+							width: 75px;
+						}
+
+						.title {
+							.state {
+								font-size: 1.375rem;
+							}
+						}
+					}
+				}
+			}
+
+			.scores-section {
+				.progress-item {
+					.progress-bar__wrapper {
+						.progress-info {
+							.score {
+								font-size: 1.4375rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.card {
+		.label {
+			font-size: $font-size-sm;
+		}
+
+		&.shortlist-player {
+			.info {
+				.info-title {
+					font-size: 0.6875rem;
+				}
+
+				.info-name {
+					font-size: $font-size-browser-default;
+				}
+			}
+		}
+
+		.player-name {
+			font-size: $font-size-xxl;
+		}
+
+		.player-position {
+			font-size: $font-size-xxl;
+		}
+
+		.player-profile {
+			height: 44px;
+			width: 44px;
+		}
+	}
+
+	.round-icon {
+		&.action-icon {
+			height: 44px;
+			width: 44px;
+		}
+	}
+
+	// recruiting-dashboard
+	.search-dashboard {
+		align-items: flex-end;
+
+		.searchbar-field {
+			width: 300px;
+		}
+	}
+
+	.player-selection {
+		.players-deck {
+			.player-drag-card {
+				.player-image {
+					width: 34px;
+					min-width: 34px;
+					height: 34px;
+				}
+
+				.info {
+					font-size: $font-size-sm;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1535px) {
+	.card {
+		.title {
+			.short-list--para {
+				width: 120px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1476px) {
+	.card {
+		.title {
+			.short-list--para {
+				width: 100px;
+			}
+
+			.last-shortlist--created {
+				font-size: $font-size-xxs;
+				line-height: 15px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1440px) {
+
+	// page-wrapper
+	.page-wrapper {
+		@include padding(20px 40px);
+		min-height: calc(100vh - 228px);
+
+		.short-list--wrapper {
+			@include margin(0 8px);
+		}
+	}
+
+	//table
+	.table {
+		.table-head {
+			.table-row {
+				.table-cell__header {
+					font-size: $font-size-sm;
+					line-height: 17px;
+				}
+			}
+		}
+
+		.table-body {
+			.table-row {
+				.table-cell {
+					.table-cell-info {
+						font-size: $font-size-xxs;
+					}
+
+					&.pinned {
+						.pinned-box {
+
+							.pinned-box--text {
+								.text {
+									font-size: $font-size-lg;
+								}
+							}
+						}
+					}
+
+					.highlight-clip {
+						font-size: $font-size-browser-default;
+					}
+				}
+
+				.hr {
+					height: 60px;
+				}
+
+				.profile-actions,
+				.profile-collapse {
+					min-width: 32px;
+					width: 32px;
+					height: 32px;
+
+					.icon {
+						width: 10px;
+					}
+
+					.pin--icon {
+						width: 16px;
+					}
+
+					.menu--icon {
+						width: 4px;
+					}
+				}
+
+				.player-image {
+					width: 32px;
+					height: 32px;
+
+					&.big {
+						width: 40px;
+						height: 40px;
+
+						&.extend {
+							p {
+								font-size: $font-size-lg;
+							}
+
+							.pin-plus-icon {
+								height: 12px;
+							}
+						}
+					}
+				}
+
+				.rank-badge {
+					.icon {
+						width: 40px;
+					}
+				}
+
+				.profile-actions--menu {
+					top: 40px;
+					line-height: 22px;
+
+					.title {
+						font-size: $font-size-browser-default;
+					}
+				}
+			}
+
+			.player-expand__wrapper {
+				.player-expand {
+
+					.iga-score,
+					.prod-score {
+						.score-title {
+							font-size: $font-size-browser-default;
+						}
+
+						.score--detail {
+							font-size: $font-size-browser-default;
+						}
+
+						.hexagon-wrapper {
+							.icon {
+								width: 50px;
+								height: 50px;
+							}
+
+							.text {
+								font-size: $font-size-lg;
+							}
+						}
+
+						.progress-bar__wrapper {
+							.title {
+								font-size: $font-size-sm;
+							}
+
+							.progress-info {
+								.title {
+									font-size: $font-size-sm;
+								}
+
+								.score {
+									font-size: $font-size-sm;
+
+									span {
+										font-size: $font-size-sm;
+									}
+								}
+							}
+						}
+					}
+
+					.ra-score {
+						.title {
+							font-size: $font-size-browser-default;
+
+						}
+
+						span {
+							font-size: $font-size-browser-default;
+						}
+
+						.score {
+							width: 33px;
+							height: 33px;
+
+							span {
+								font-size: $font-size-sm;
+							}
+						}
+
+						.frame {
+							.frame-item {
+								width: 60px;
+							}
+						}
+
+						.compare-title {
+							font-size: $font-size-sm;
+						}
+
+						.compare-btn {
+							width: 150px;
+							height: 42px;
+							font-size: $font-size-sm;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Login Page
+	.login {
+		.logo-wrapper {
+			margin-bottom: 40px;
+
+			.logo-item {
+				width: 200px;
+			}
+		}
+
+		.form {
+			.form-item {
+				.input-field {
+					min-height: 60px;
+				}
+
+				.password-icon {
+					top: 16px;
+				}
+			}
+
+			.checkbox {
+				margin-bottom: 40px;
+			}
+
+			.login-btn {
+				min-height: 60px;
+			}
+		}
+	}
+
+	// Home-Screen
+	.landingpage-wrapper {
+		.langing-page_header {
+			.logo-image {
+				width: 200px;
+			}
+		}
+
+		.text-wrapper {
+			.text-highlight {
+				.title {
+					font-size: 3.75rem;
+				}
+			}
+		}
+
+		.feature-wrapper {
+			.feature-list_item {
+				font-size: $font-size-xxl;
+			}
+		}
+	}
+
+	.sidebar {
+		.sidebar-menu {
+			.sidebar-list {
+				font-size: $font-size-xxl;
+			}
+		}
+
+		.logout-btn {
+			height: 60px;
+			width: 200px;
+		}
+	}
+
+	// header-section
+	.header {
+		.tab-header {
+			.tab-btn--wrapper {
+				height: 50px;
+			}
+		}
+	}
+
+	//plyer-search
+	.searchbar-label {
+		font-size: 1.5rem;
+		margin-right: 20px;
+	}
+
+	.searchbar-field {
+		width: 300px;
+
+		.search--icon {
+
+			&.search-top {
+				top: 50px;
+			}
+		}
+
+		.searchbar-input {
+			height: 45px;
+		}
+
+		&.shortlist {
+			width: 300px;
+		}
+	}
+
+	.btn {
+		height: 45px;
+
+		&.with-select-dropdown {
+			height: 50px;
+		}
+	}
+
+	.metrix-wrapper {
+		.metrix-wrap {
+			height: 43px;
+			width: 130px;
+		}
+	}
+
+	.sidebar {
+		.sidebar-menu {
+			.sidebar-list {
+				font-size: $font-size-xxl;
+			}
+		}
+
+		.logout-btn {
+			height: 60px;
+			width: 200px;
+		}
+	}
+
+	//filter
+	.filter-wrapper {
+		@include padding(20px);
+
+		.filter-title {
+			font-size: $font-size-browser-default;
+		}
+
+		.filter-items {
+			.range-slider-wrapper {
+				top: 75px;
+			}
+		}
+
+		.input-title {
+			font-size: $font-size-sm;
+		}
+
+		.score-title {
+			.input-title {
+				font-size: $font-size-sm;
+			}
+		}
+
+		.filter-text {
+			font-size: $font-size-lg;
+		}
+
+		.filter-arrow {
+			height: 32px;
+			width: 32px;
+		}
+
+		.filter {
+			font-size: $font-size-xs;
+		}
+	}
+
+	.modal {
+		&.player-compare {
+			.modal__body {
+				.player-info {
+					.score {
+						font-size: 1.875rem;
+						line-height: 35px;
+					}
+
+					.igascore-title {
+						font-size: $font-size-xl;
+					}
+
+					.player-name {
+						font-size: 30px;
+					}
+				}
+
+				.comparison-details {
+					.comparision-items {
+						.compare-number {
+							font-size: $font-size-lg;
+						}
+
+						.player-title {
+							font-size: $font-size-xl;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.select-player-dropdown {
+		.react-select-container {
+			height: 45px;
+		}
+	}
+
+	//Player-Profile
+	.player-profile__section {
+		.personal-section {
+			.info-wrapper {
+				.recruited {
+					@include marginRight(30px);
+				}
+
+				.score-details {
+					@include paddingLeft(40px);
+				}
+
+				.score-item {
+					.score-item-title {
+						font-size: $font-size-lg;
+					}
+
+					.text {
+						font-size: 1.375rem;
+					}
+				}
+
+				.score,
+				.recruited,
+				.player-tag {
+					@include marginBottom(40px);
+				}
+
+				.score,
+				.recruited,
+				.player-tag,
+				.team-grade,
+				.player-id {
+					&-title {
+						font-size: $font-size-xxl;
+					}
+				}
+
+				.player-avatar {
+					width: 220px;
+					height: 220px;
+				}
+
+				.player-name {
+					font-size: 1.875rem;
+				}
+
+				.bio {
+					.bio-field {
+						.bio-title {
+							font-size: $font-size-sm;
+						}
+						.bio-value {
+							font-size: $font-size-xxl;
+						}
+					}
+				}
+
+				.add-tag {
+					width: 28px;
+					height: 28px;
+					@include marginLeft(15px);
+					.icon {
+						width: 13px;
+						height: 13px;
+					}
+				}
+
+				.hexagon-wrapper {
+					.icon {
+						width: 50px;
+						height: 50px;
+					}
+					.text {
+						color: $white;
+					}
+				}
+
+				.tag-btn {
+					height: 28px;
+					font-size: $font-size-sm;
+				}
+			}
+
+			.action-wrapper {
+				@include padding(27px);
+
+				.select-field {
+					.react-select-container {
+						height: 42px;
+					}
+				}
+
+				.prospect-wrapper {
+					.btn-wrapper {
+						.btn {
+							width: 180px;
+							height: 42px;
+							font-size: 14px;
+						}
+					}
+				}
+
+				.actions {
+					.action-item {
+						width: 40px;
+						height: 40px;
+
+						.count {
+							width: 18px;
+							height: 18px;
+							right: -4px;
+						}
+
+						.icon {
+							width: 20px;
+							height: 20px;
+
+							&.quick--icon {
+								width: 24px;
+								height: 24px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.details-section {
+			@include marginTop(50px);
+			.left-section {
+				.ranking-section,
+				.scores-section,
+				.compare-section,
+				.evaluation-section,
+				.quick-note-section {
+					@include padding(15px);
+
+					.collapse-box-wrapper {
+						.collapse-title {
+							font-size: 1.375rem;
+						}
+
+						.collapse-arrow {
+							width: 40px;
+							min-width: 40px;
+							height: 40px;
+						}
+					}
+				}
+
+				.scores-section,
+				.compare-section,
+				.evaluation-section,
+				.quick-note-section {
+					@include marginTop(20px);
+				}
+
+				.ranking-section {
+					.rank-wrapper {
+						.rank-item {
+							.rank-badge {
+								width: 65px;
+							}
+
+							.title {
+								.state {
+									font-size: 1.25rem;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.right-section {
+				.player-video-section {
+					.clip-wrapper {
+						.clip-video {
+							width: 50%;
+						}
+
+						.clip-details {
+							width: 50%;
+
+							.video-title {
+								font-size: 1.375rem;
+							}
+
+							.video-info {
+								font-size: $font-size-sm;
+							}
+
+							.video-label {
+								font-size: $font-size-browser-default;
+
+								.video-text {
+									font-size: $font-size-lg;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.card {
+		@include margin(8px);
+
+		&.dashboard-card,
+		&.shortlist-card,
+		&.player-card {
+			flex: 0 0 calc(33% - 16px);
+		}
+
+		&.dashboard-card {
+			flex: 0 0 calc(50% - 20px);
+		}
+
+		.kpi-scores {
+			.score-info {
+				@include padding(8px);
+			}
+		}
+
+		.player-profile {
+			height: 50px;
+			width: 50px;
+		}
+
+		.player-name {
+			font-size: $font-size-xxl;
+		}
+
+		.player-position {
+			font-size: $font-size-xxl;
+		}
+
+		.down-icon {
+			height: 38px;
+			width: 38px;
+
+			svg {
+				height: 10px;
+			}
+		}
+	}
+
+	.round-icon {
+		width: 44px;
+		height: 44px;
+
+		&.action-icon {
+			height: 38px;
+			width: 38px;
+		}
+	}
+
+	// recruiting-dashboard
+	.recruiting-dashboard {
+		.dashboard-section {
+			.search-dashboard {
+				align-items: flex-start;
+
+				.searchbar {
+					flex-direction: column;
+					align-items: flex-start;
+
+					.searchbar-label {
+						@include marginBottom(20px);
+					}
+				}
+			}
+		}
+	}
+
+	//footer
+	.footer {
+		bottom: 0;
+		height: 100px;
+
+		.title {
+			@include marginRight(35px);
+		}
+
+		.footer-logo-wrapper {
+			@include marginRight(20px);
+		}
+
+		.logo {
+			height: 45px;
+			min-height: 45px;
+		}
+	}
+}
+
+@media screen and (max-width: 1280px) {
+
+	// page-wrapper
+	.page-wrapper {
+		@include padding(20px 25px);
+	}
+
+	// header-section
+	.header {
+		height: 70px;
+
+		.header-logo {
+			height: 50px;
+			min-height: 50px;
+			@include marginLeft(20px);
+		}
+
+		.tab-header {
+			.tab-btn--wrapper {
+				height: 45px;
+
+				.tab-btn {
+					@include padding(0 8px);
+					font-size: $font-size-xs;
+				}
+			}
+		}
+
+		.header-actions {
+			@include marginRight(20px);
+
+			.round-wrapper {
+				width: 35px;
+				height: 35px;
+
+				.notification--count {
+					width: 20px;
+					height: 20px;
+					font-size: 0.625rem;
+				}
+			}
+
+			.coach-title {
+				font-size: $font-size-xs;
+			}
+		}
+	}
+
+	//table
+	.table-wrapper {
+		overflow-x: auto;
+
+		&::-webkit-scrollbar {
+			height: 3px;
+		}
+	}
+
+	.table {
+		width: max-content;
+
+		.table-head {
+			&.table-sticky--header {
+				top: 0;
+			}
+
+			.table-row {
+				height: 65px;
+
+				.table-cell__header {
+					@include padding(0 10px);
+				}
+			}
+		}
+
+		.table-body {
+			.table-row {
+				height: 65px;
+
+				.hr {
+					height: 35px;
+				}
+
+				.table-cell {
+					@include padding(0 10px);
+
+					&.pinned {
+						.pinned-box {
+							height: 65px;
+
+							.pinned-box--text {
+								height: 65px;
+
+								p {
+									font-size: $font-size-lg;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//Home-Screen
+	.landingpage-wrapper {
+		.langing-page_header {
+			.logo-image {
+				width: 180px;
+			}
+		}
+
+		.text-wrapper {
+			.text-highlight {
+				.title {
+					font-size: 3.438rem;
+				}
+			}
+		}
+
+		.feature-wrapper {
+			.feature-list_item {
+				font-size: 17px;
+			}
+		}
+	}
+
+	//player-search
+
+	.searchbar-field {
+
+		.search--icon {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	.btn {
+		font-size: $font-size-sm;
+		width: 180px;
+	}
+
+	.file--icon {
+		top: 11px;
+		width: 16px;
+	}
+
+	.metrix-wrapper {
+		.metrix-wrap {
+			height: 43px;
+			width: 127px;
+			font-size: $font-size-sm;
+		}
+	}
+
+	//comparison modal
+	.modal {
+		&.player-compare {
+			.modal__body {
+				.player-info {
+					.score {
+						font-size: $font-size-xxl;
+
+						span {
+							font-size: $font-size-xxs;
+						}
+					}
+
+					.igascore-title {
+						font-size: $font-size-lg;
+					}
+
+					.player-name {
+						font-size: 1.5625rem;
+					}
+
+					.player-details {
+						.player-score {
+							width: 35%;
+
+							.player-igascore {
+								@include marginBottom(10px);
+								@include padding(0 0 15px);
+							}
+						}
+
+						.player-profile {
+							width: 65%;
+						}
+					}
+
+					.healmate-image {
+						height: 45px;
+						width: 45px;
+					}
+				}
+
+				.comparison-details {
+					.comparison-items {
+						.compare-number {
+							font-size: $font-size-sm;
+						}
+
+						.player-title {
+							font-size: $font-size-sm;
+						}
+
+						.dropable-arrow {
+							.down-arrow-compare {
+								height: 15px;
+								width: 15px;
+								top: -17px;
+								right: -23px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//Player-Profile
+	.player-profile__section {
+		.personal-section {
+			.info-wrapper {
+				@include marginBottom(30px);
+
+				.recruited {
+					@include marginRight(20px);
+				}
+
+				.score-details {
+					@include paddingLeft(30px);
+				}
+
+				.score,
+				.recruited,
+				.player-tag {
+					@include marginBottom(35px);
+				}
+
+				.score,
+				.recruited,
+				.player-tag,
+				.team-grade,
+				.player-id {
+					&-title {
+						font-size: $font-size-lg;
+					}
+				}
+
+				.recruited {
+					.under-recruited {
+						.icon {
+							height: 36px;
+							width: 36px;
+						}
+					}
+				}
+
+				.player-avatar {
+					width: 190px;
+					height: 190px;
+				}
+
+				.player-name {
+					font-size: 1.5625rem;
+				}
+
+				.player-position {
+					font-size: $font-size-xxl;
+				}
+
+				.bio {
+					.bio-field {
+						.bio-value {
+							font-size: $font-size-lg;
+						}
+					}
+				}
+			}
+
+			.action-wrapper {
+				flex-direction: column-reverse;
+
+				.dropdown {
+					width: $full-width;
+					justify-content: space-between;
+					@include marginRight(0);
+
+					.select-field {
+						&:last-child {
+							@include marginRight(0);
+						}
+					}
+				}
+
+				.prospect {
+					width: $full-width;
+					justify-content: space-between;
+					@include marginBottom(30px);
+				}
+
+				.prospect-wrapper {
+					.prospect-options {
+						top: 50px;
+						right: -20px;
+					}
+				}
+			}
+		}
+
+		.details-section {
+			@include marginTop(30px);
+
+			.left-section {
+				.ranking-section {
+					.rank-wrapper {
+						.rank-item {
+							.rank-badge {
+								width: 55px;
+							}
+
+							.title {
+								.state {
+									font-size: $font-size-lg;
+								}
+
+								.rank-position {
+									font-size: $font-size-xs;
+								}
+							}
+						}
+					}
+				}
+
+				.scores-section {
+					.progress-item {
+						.progress-bar__wrapper {
+							.progress-info {
+								.score {
+									font-size: 1.3125rem;
+								}
+							}
+						}
+					}
+
+					.progress-sub-item {
+						.progress-bar__wrapper {
+							.progress-info {
+								.title {
+									font-size: $font-size-sm;
+								}
+
+								.score {
+									font-size: $font-size-browser-default;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.right-section {
+				.player-video-section {
+					.title {
+						font-size: 1.375rem;
+					}
+				}
+			}
+		}
+	}
+
+	.card {
+
+		&.dashboard-card,
+		&.shortlist-card,
+		&.player-card {
+			flex: 0 0 calc(50.28% - 24px);
+		}
+
+		&.dashboard-card {
+			flex: 0 0 calc(100% - 28px);
+		}
+
+		&.shortlist-player {
+			.info {
+				.info-title {
+					font-size: $font-size-sm;
+				}
+
+				.info-name {
+					font-size: $font-size-lg;
+				}
+			}
+		}
+
+		.title {
+			.short-list--para {
+				width: 160px;
+			}
+
+			.last-created--shortlist {
+				width: 140px;
+
+				.last-shortlist--created {
+					font-size: $font-size-sm;
+					line-height: 17px;
+				}
+			}
+		}
+	}
+
+	.cover-fame {
+		height: calc(100vh - 20px);
+
+		.cover-title {
+			@include margin(20px 0);
+			font-size: 1.5625rem;
+		}
+	}
+
+	// recruiting-dashboard
+	.recruiting-dashboard {
+		.dashboard-section {
+			width: 55%;
+		}
+
+		.players-section {
+			width: 45%;
+		}
+	}
+
+	//total-players--count
+	.total-players--count {
+		font-size: $font-size-browser-default;
+	}
+
+	.shortlist--title {
+		font-size: $font-size-sm;
+	}
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+
+	//Player-Profile
+	.player-profile__section {
+		.details-section {
+			.right-section {
+				.player-video-section {
+					.clip-wrapper {
+						.clip-details {
+							.video-title {
+								font-size: $font-size-lg;
+							}
+
+							.video-label {
+								font-size: $font-size-sm;
+
+								.video-text {
+									font-size: $font-size-browser-default;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+
+	// Login Page
+	.login {
+		.logo-wrapper {
+			margin-bottom: 30px;
+
+			.logo-item {
+				width: 150px;
+			}
+		}
+
+		.form {
+			.form-item {
+				.input-field {
+					min-height: 50px;
+				}
+
+				.password-icon {
+					top: 11px;
+				}
+			}
+
+			.checkbox {
+				margin-bottom: 35px;
+			}
+
+			.login-btn {
+				min-height: 50px;
+			}
+		}
+	}
+
+	//header
+	.header {
+		.header-logo {
+			width: 60px;
+			min-width: 60px;
+		}
+
+		.notification-wrapper {
+			width: 38px;
+			height: 35px;
+			margin-left: 15px;
+
+			.notification--count {
+				width: 18px;
+				height: 18px;
+				top: -10px;
+				right: -1px;
+				font-size: 10px;
+			}
+		}
+	}
+
+	//player-search
+	.searchbar-label {
+		font-size: 24px;
+		margin-right: 12px;
+	}
+
+	.searchbar-field {
+		width: 260px;
+
+		.search--icon {
+			top: 13px;
+		}
+
+		.searchbar-input {
+			height: 45px;
+		}
+	}
+
+	.btn {
+		height: 40px;
+		width: 171px;
+	}
+
+	.file--icon {
+		top: 9px;
+		width: 14px;
+	}
+
+	//Home-Screen
+	.landingpage-wrapper {
+		.langing-page_header {
+			.logo-image {
+				width: 160px;
+			}
+		}
+
+		.text-wrapper {
+			.text-highlight {
+				.title {
+					font-size: 3.125rem;
+				}
+			}
+		}
+
+		.feature-wrapper {
+			.feature-list_item {
+				font-size: 15px;
+			}
+		}
+	}
+
+	.sidebar {
+		.sidebar-menu {
+			.sidebar-list {
+				font-size: $font-size-lg;
+			}
+		}
+
+		.logout-btn {
+			height: 55px;
+			width: 180px;
+		}
+	}
+
+	.metrix-wrapper {
+		.metrix-wrap {
+			width: 105px;
+		}
+	}
+
+	.filter-wrapper {
+		.filter-items {
+			width: 275px;
+			margin-right: 20px;
+
+			.filter-input {
+				height: 45px;
+			}
+
+			.react-select-container {
+				height: 45px;
+			}
+		}
+	}
+
+	//comparison modal
+	.modal {
+		&.player-compare {
+			.modal__body {
+				.player-info {
+					.score {
+						line-height: 20px;
+					}
+
+					.player-name {
+						font-size: $font-size-lg;
+						margin-top: 0px;
+					}
+
+					.player-details {
+						.player-profile {
+							width: 60%;
+						}
+
+						.player-igascore {
+							margin-bottom: 20px;
+						}
+
+						.player-score {
+							width: 40%;
+
+							.logo-healmate {
+								height: 40px;
+								width: 40px;
+							}
+						}
+					}
+
+					.player-raprod-score {
+						margin-top: 0px;
+					}
+
+					.igascore-title {
+						font-size: $font-size-xs;
+					}
+				}
+			}
+		}
+	}
+
+	.select-player-dropdown {
+		.react-select-container {
+			height: 40px;
+		}
+	}
+
+	//Player-Profile
+	.player-profile__section {
+		.personal-section {
+			.info-wrapper {
+				@include marginBottom(30px);
+
+				.score-details {
+					@include paddingLeft(30px);
+					width: 33%;
+				}
+
+				.player-logo-info {
+					.player-avatar {
+						height: 160px;
+						width: 160px;
+					}
+				}
+
+				.bio-info {
+					.bio {
+						.bio-field {
+							width: calc(46% - 15px);
+							@include margin(0 25px 25px 0);
+						}
+					}
+				}
+			}
+		}
+
+		.details-section {
+			flex-direction: column;
+
+			.left-section {
+				width: 100%;
+
+				.ranking-section,
+				.scores-section,
+				.compare-section,
+				.evaluation-section,
+				.quick-note-section {
+					@include padding(15px);
+				}
+			}
+
+			.right-section {
+				width: 100%;
+
+				.player-video-section {
+					@include margin(20px 0 0);
+
+					.clip-wrapper {
+						height: 250px;
+					}
+				}
+			}
+		}
+	}
+}
