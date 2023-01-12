@@ -158,6 +158,10 @@
 	width: 20px;
 }
 
+.width--24px {
+	width: 24px;
+}
+
 .width--32px {
 	width: 32px;
 }
@@ -196,6 +200,10 @@
 
 .height--16px {
 	height: 16px;
+}
+
+.height--24px {
+	height: 24px;
 }
 
 .height--50px {
@@ -336,6 +344,10 @@
 	@include marginTop(15px);
 }
 
+.mt--16 {
+	@include marginTop(16px);
+}
+
 .mt--20 {
 	@include marginTop(20px);
 }
@@ -346,6 +358,10 @@
 
 .mt--30 {
 	@include marginTop(30px);
+}
+
+.mt--32 {
+	@include marginTop(32px);
 }
 
 .mt--35 {
@@ -440,6 +456,10 @@
 	@include marginBottom(15px);
 }
 
+.mb--16 {
+	@include marginBottom(16px);
+}
+
 .mb--20 {
 	@include marginBottom(20px);
 }
@@ -504,8 +524,8 @@
 	@include marginLeft(15px);
 }
 
-.ml--17 {
-	@include marginLeft(17px);
+.ml--16 {
+	@include marginLeft(16px);
 }
 
 .ml--20 {
@@ -676,8 +696,8 @@
 	left: 0;
 }
 
-.left--20 {
-	left: 20px;
+.left--16 {
+	left: 16px;
 }
 
 .right--20 {
@@ -895,12 +915,16 @@
 	line-height: $line-height-lg;
 }
 
-.line-height--17 {
-	line-height: 17px;
+.line-height--18 {
+	line-height: 18px;
 }
 
 .line-height--20 {
 	line-height: 20px;
+}
+
+.line-height--24 {
+	line-height: 24px;
 }
 
 .line-height--28 {
@@ -1102,8 +1126,8 @@
 	border-radius: $border-radius-lg;
 }
 
-.border-radius--xxl {
-	border-radius: $border-radius-xxl;
+.border-radius--xl {
+	border-radius: $border-radius-xl;
 }
 
 .border-radius--half {
@@ -1135,4 +1159,36 @@
 .error {
 	color: getColor($red, 200);
 	@include marginTop(10px);
+}
+
+.bg--grey {
+	@include getShadesColorClasses($grey, 'background-color');
+}
+
+.bg--primary {
+	background-color: $primary;
+}
+
+.bg--orange {
+	background-color: $orange;
+}
+
+.fill--white {
+	fill: $white;
+}
+
+.fill--black {
+	fill: $black;
+}
+
+.fill--grey {
+	@include getShadesColorClasses($grey, 'fill');
+}
+
+.fill--primary {
+	fill: $primary;
+}
+
+.text--grey {
+	@include getShadesColorClasses($grey, 'color');
 }

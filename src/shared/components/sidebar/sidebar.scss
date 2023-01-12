@@ -1,0 +1,37 @@
+@import '../../../assets/styles/variable';
+@import '../../../assets/styles/common/mixin';
+
+.sidebar-wrapper {
+	max-width: 300px;
+	min-height: 100vh;
+	@include padding(30px 16px);
+	border-radius: 0px 24px 24px 0px;
+	.logo {
+		.icon {
+			width: 45px;
+			height: 24px;
+		}
+	}
+	.links {
+		@include marginTop(50px);
+		.link {
+			&:hover {
+				color: $primary;
+			}
+			&.active {
+				@include padding(0 16px);
+				height: 56px;
+				background-color: $primary;
+				border-radius: 12px;
+				color: $white;
+				font-weight: $font-bold;
+				.icon-wrapper {
+					@include marginLeft(0);
+					.icon {
+						fill: $white;
+					}
+				}
+			}
+		}
+	}
+}

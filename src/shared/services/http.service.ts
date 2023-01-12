@@ -1,8 +1,8 @@
 import axios, { AxiosRequestConfig, AxiosResponse, CancelToken } from 'axios';
+
 import { API_BASE_URL } from 'shared/constants';
 import { getUrl } from 'shared/constants/api';
 import { IResponseObject } from 'shared/interface';
-import authService from './auth.service';
 
 const axiosInstance = axios.create();
 
@@ -58,18 +58,15 @@ interface IAxiosParams extends IMiscellaneousRequestParams {
  * @param object containing method, url, data, access token, content-type, isLogin
  */
 const commonAxios = (config: IAxiosParams): Promise<any> => {
-	const { method, url, data, contentType = 'application/json', isPublic = false } = config;
+	const { method, url, data, contentType = 'application/json' } = config;
 	const headers: any = {
 		'Content-Type': contentType
 	};
-
-	// if end point is public than no need to provide access token
-	if (!isPublic) {
-		const token = authService.getAuthData();
-		if (token) {
-			headers['x-access-token'] = `${token}`;
-		}
-	}
+	//Putting static token here becuase we do not have a user authentication for demo.
+	// const token = '34303304-5475-4d63-9352-0d24ed631b37';
+	// if (token) {
+	// 	headers['x-access-token'] = `bearer ${token}`;
+	// }
 
 	let body: any = null;
 	if (contentType === 'application/json') {

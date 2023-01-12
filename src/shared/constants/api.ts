@@ -5,15 +5,7 @@ import { API_BASE_URL } from './index';
 export const API_CONFIG = {
 	baseUrl: `${process.env.REACT_APP_BASE_URL}`,
 	path: {
-		login: 'user/auth/login',
-		forget: 'user/password/forgot',
-		reset: 'user/password/reset',
-		players: 'user/players',
-		shortLists: 'user/shortlists',
-		recruitingDashboard: 'user/recruitingdb',
-		playerProfile: 'user/players/profile',
-		dropdwon: 'user/dropdown',
-		account: 'user/account'
+		allRestaurant: 'allRestaurants'
 	}
 };
 

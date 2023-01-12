@@ -9,3 +9,11 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.app-main-wrapper {
+	.app-content {
+		@include padding(30px);
+		width: calc(100% - 300px);
+		@include marginLeft(auto);
+	}
+}

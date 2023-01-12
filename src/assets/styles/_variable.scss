@@ -12,8 +12,8 @@ $font-heavy: 900;
 $font-extra-heavy: 1000;
 
 //Font size variables
-$font-size-xxs: 0.75rem; // 12px
-$font-size-xs: 0.8125rem; // 13px
+$font-size-xxs: 0.625rem; // 10px
+$font-size-xs: 0.8125rem; // 12px
 $font-size-sm: 0.875rem; // 14px
 $font-size-default: 0.9375rem; // 15px
 $font-size-browser-default: 1rem; // 1rem = 16px
@@ -28,18 +28,17 @@ $full-height: 100%;
 $full-viewport-width: 100vw;
 $full-viewport-height: 100vh;
 
-//Color Palette variables
+$primary: #503e9d;
 $white: #ffffff;
 $black: #18191a;
-
-//Theme blur
-$theme-1-blur: #ffffff1a;
-$theme-2-blur: #0000001a;
-$theme-3-blur: #ffffff0d;
+$orange: #fb6d3a;
 
 $grey: (
 	50: #bdbdbd,
-	100: #828282
+	100: #a3a3a4,
+	200: #828282,
+	300: #f7f7f7,
+	400: #626264
 );
 
 $red: (
