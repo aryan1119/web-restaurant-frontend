@@ -55,8 +55,11 @@ const FilterSection: React.FC<IProps> = (props) => {
 						</button>
 					</>
 				)}
-				<button className='btn action flex align-items--center ml--16 justify-content--center bg--orange'>
+				<button className='btn action flex align-items--center ml--16 position--relative justify-content--center bg--orange'>
 					<TrollyIcon className='width--16px fill--white' />
+					<span className='order-count text--white font-size--xs flex align-items--center justify-content--center bg--black width--24px height--24px border-radius--half position--absolute'>
+						2
+					</span>
 				</button>
 			</div>
 		</div>

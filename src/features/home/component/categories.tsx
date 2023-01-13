@@ -28,7 +28,7 @@ const categories = [
 ];
 interface IProps {
 	handleSelectCategory: (category: string) => void;
-	selectedCategory: string;
+	selectedCategory: string[];
 }
 const Categories: React.FC<IProps> = (props) => {
 	const { handleSelectCategory, selectedCategory } = props;
@@ -45,12 +45,12 @@ const Categories: React.FC<IProps> = (props) => {
 					>
 						<button
 							className={`btn  flex justify-content--center mr--15 align-items--center action ${
-								selectedCategory === category.title ? 'bg--primary' : 'bg--grey-300'
+								selectedCategory.includes(category.title) ? 'bg--primary' : 'bg--grey-300'
 							}`}
 						>
 							<img className='image' src={category.logo} alt='' />
 						</button>
-						<p className={`font--bold ${selectedCategory === category.title ? 'text--primary' : ''}`}>
+						<p className={`font--bold ${selectedCategory.includes(category.title) ? 'text--primary' : ''}`}>
 							{category.title}
 						</p>
 					</div>

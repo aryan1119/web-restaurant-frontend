@@ -8,11 +8,10 @@ import { IRestaurant } from '../interface/interface';
 interface IProps {
 	restaurants: IRestaurant[];
 	loading: boolean;
-	selectedCategory: string;
 }
 
 const Restaurants: React.FC<IProps> = (props) => {
-	const { restaurants, loading, selectedCategory } = props;
+	const { restaurants, loading } = props;
 
 	return (
 		<div className='restaurant-wrapper mt--40'>
@@ -23,15 +22,9 @@ const Restaurants: React.FC<IProps> = (props) => {
 					{isEmpty(restaurants) && <EmptyDataContainer text='No restaurants are available currently' />}
 					{!isEmpty(restaurants) && (
 						<div className='card-wrapper flex flex--wrap mt--20'>
-							{restaurants
-								.filter((categoryParser) =>
-									selectedCategory
-										? JSON.parse(categoryParser.restaurantCategory).includes(selectedCategory)
-										: true
-								)
-								.map((item) => (
-									<RestaurantCard key={item.id} item={item} />
-								))}
+							{restaurants.map((item) => (
+								<RestaurantCard key={item.id} item={item} />
+							))}
 						</div>
 					)}
 				</>

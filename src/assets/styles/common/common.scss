@@ -150,6 +150,10 @@
 	width: 10px;
 }
 
+.width--12px {
+	width: 12px;
+}
+
 .width--16px {
 	width: 16px;
 }
@@ -712,12 +716,8 @@
 	left: 16px;
 }
 
-.right--20 {
-	right: 20px;
-}
-
-.right--25 {
-	right: 25px;
+.right--16 {
+	right: 16px;
 }
 
 .cursor--auto {
@@ -1055,6 +1055,10 @@
 	overflow: auto;
 }
 
+.overflow--auto-y {
+	overflow-y: auto;
+}
+
 .opacity--10 {
 	opacity: 0.1;
 }
@@ -1154,6 +1158,10 @@
 	border-radius: $border-radius-xl;
 }
 
+.border-radius--xxl {
+	border-radius: $border-radius-xxl;
+}
+
 .border-radius--half {
 	border-radius: $border-radius-circle;
 }
@@ -1205,6 +1213,10 @@
 	background-color: $orange;
 }
 
+.bg--black {
+	background-color: $black;
+}
+
 .fill--white {
 	fill: $white;
 }
@@ -1219,6 +1231,10 @@
 
 .fill--primary {
 	fill: $primary;
+}
+
+.fill--orange {
+	fill: $orange;
 }
 
 .text--grey {

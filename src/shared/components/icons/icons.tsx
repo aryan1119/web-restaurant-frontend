@@ -175,3 +175,22 @@ export const FireIcon: React.FC<IProps> = (props) => (
 		/>
 	</svg>
 );
+
+export const ClockIcon: React.FC<IProps> = (props) => (
+	<svg className={props.className || ''} viewBox='0 0 32 32' fill='none'>
+		<path
+			fillRule='evenodd'
+			clipRule='evenodd'
+			d='M16 0C20.2435 0 24.3131 1.68571 27.3137 4.68629C30.3143 7.68687 32 11.7565 32 16C32 24.8366 24.8366 32 16 32C7.152 32 0 24.8 0 16C0 7.16344 7.16344 0 16 0ZM16 28.8C23.0692 28.8 28.8 23.0693 28.8 16C28.8 8.93076 23.0692 3.20001 16 3.20001C8.93075 3.20001 3.2 8.93076 3.2 16C3.2 23.0693 8.93075 28.8 16 28.8ZM16.8 16.4V8H14.4V17.6L22.8 22.64L24 20.672L16.8 16.4Z'
+		/>
+	</svg>
+);
+
+export const RightArrowIcon: React.FC<IProps> = (props) => (
+	<svg viewBox='0 0 16 16' fill='none' className={props.className || ''}>
+		<path
+			d='M11.92 7.35443L8.4576 3.62471L9.96587 2L16 8.5L9.96587 15L8.4576 13.3753L11.9125 9.65247H0V7.35443H11.92Z'
+			fill='white'
+		/>
+	</svg>
+);
