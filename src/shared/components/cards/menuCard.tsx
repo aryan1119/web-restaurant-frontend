@@ -16,7 +16,7 @@ const MenuCard: React.FC<IProps> = (props) => {
 			/>
 			<div className='flex justify-content--between info mt--16 mb--10'>
 				<p className='font--bold'>{itemName}</p>
-				<p className='text--primary fom--semi-bold'>{itemCost}</p>
+				<p className='text--primary fom--semi-bold'>£{itemCost}</p>
 			</div>
 		</div>
 	);
